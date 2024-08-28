@@ -1,0 +1,321 @@
+#body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  ç
+                                      /* PAINEL ESQUERDO */
+
+#painel-esquerdo{
+    height: 100%;
+    width: 15vw;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 8px 2px 5px black;
+}
+
+#area-bloco1-painel-esquerdo{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+#area-nome{
+    width: 90%;
+    margin: none;
+    text-align: center;
+}
+
+#nome{
+    color:#115e5e;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 5px;
+    padding-bottom: 2px;
+    font-size: 20pt;
+}
+
+hr{
+    border: 1.5px solid #1bc4a7
+}
+
+.btn-principal{
+    height: 25px;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-end: 0px;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-inline: 3px;
+}
+
+#area-btn-cad{
+    display: flex;
+    flex-direction: row;
+}
+#btn-receita{
+    height: 25px;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    background-color: #1bc4a7;
+    margin-inline: 4px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-receita:hover{
+    background-color: #0f967f;
+}
+
+#btn-despesa{
+    height: 25px;
+    width: 47%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn-despesa:hover{
+    background-color: rgb(184, 3, 3);
+}
+
+.painel-visivel {
+    width: 15vw; /* Largura inicial do painel */
+    transition: width 0.5s ease; /* Transição suave */
+}
+
+.painel-recolhido {
+    width: 0vw; /* Largura do painel quando recolhido */
+    transition: width 0.5s ease; /* Transição suave */
+    overflow: hidden; /* Oculta o conteúdo do painel quando recolhido */
+}
+
+
+/*===================================== ÁREA DE TRABALHO PRINCIPAL ========================================*/
+
+#main2{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-color: red;
+}
+
+#cabecalho{
+    height: 6%;
+    width: 100%;
+    border: none;
+    background-color:#05dbb8;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+#area-btn-recolher{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: flex-end;
+    width: 20%;
+    height: -webkit-fill-availablle;
+    margin: none;
+    border: 0;
+}
+
+#btn-recolher{
+    width: 1vw;
+    height: 2.5vh;
+    border: 0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #115e5e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 4px 4px 20px black;
+}
+h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#layout-trabalho{
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    background-color: rgb(17, 94, 94);
+}
+
+#rodape{
+    width: -webkit-fill-available;
+    height: 4%;
+    padding: none;
+    margin: 0;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:#05dbb8
+}
+
+                                             /* LAYOUT LANÇAMENTOS */
+
+#layout-lancamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
+#titulo-lancamentos{
+    font-size: 20pt;
+    padding: none;
+    margin-block: 12px;
+}
+
+#back-tabela-receita{
+    width: 93%;
+    
+}
+
+                                             /* POP-UP */
+
+
+
+#form-cad-receita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#field-cad{
+    width: 95%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+#area-bloco1-form, #area-bloco2-form, #area-bloco3-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#area-bloco2-form{
+    justify-content: left;
+}
+
+#cad-area-lancamento{
+    width: -webkit-fill-available;
+    height: 2vh;
+    margin-right: 10px;
+}
+#cad-lancamento{
+    outline: 1px;
+    outline-style: solid;
+}
+
+#cad-valor-total, #cad-banco, #cad-tipo-de-pag, #cad-status, #cad-categoria, #cad-data{
+    outline: 1px;
+    border-radius: 5px;
+    outline-style: solid;
+    text-align: center;
+    border: gray;
+}
+
+#cad-area-valor-total{
+    width: 7vw;
+    text-align: center;
+}
+
+#cad-area-banco{
+    width: 8vw;
+    margin-right: 10px;
+}
+#cad-banco{
+    height: 1.9vh;
+    text-align: left;
+}
+
+#cad-area-tipo-de-pag{
+    width: 6vw;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#cad-tipo-de-pag .Select-control{
+    font-size: 13pt;
+    height: 4vh;
+}
+
+#cad-area-status{
+   width: 6.5vw;
+   margin-right: 10px;
+   text-align: center;
+}
+
+#cad-status .Select-control{
+    font-size: 13pt;
+    height: 4vh;
+}
+
+#cad-area-categoria{
+    width: 8vw;
+    margin-right: 10px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+#cad-categoria .Select-control{
+    font-size: 13pt;
+    height: 4vh;
+}
+
+#cad-area-data{
+    width: 5vw;
+    text-align: right;
+}
+#cad-data{
+    height: 4vh;
+    border-radius: 5px;
+}
+#cad-data .DateInput_input{
+    font-size: 13pt;
+    text-align: center;
+    height: 3.9vh;
+    border-radius: 5px;
+}
+
+#btn-form-enviar-receita{
+    background-color: #1bc4a7;
+    border: none;
+    border-radius: 5px;
+    width: 25%;
+    cursor: pointer;
+}
+
+#btn-form-enviar-receita:hover{
+    background-color: #115e5e;
+    color: white;
+}

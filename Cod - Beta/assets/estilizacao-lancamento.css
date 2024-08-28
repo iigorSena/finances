@@ -1,0 +1,13 @@
+#lancamento-btn{
+    display: flex;
+    flex-direction: row;
+    width: -webkit-fill-available;
+}
+
+#area-btn1, #area-btn2{
+    width: 50%;
+}
+
+#btn-lan-receitas{
+    width: -webkit-fill-available;
+}
